@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+set -o pipefail
+set -o errexit
+set -o noclobber
+
+PCAP_BASE="${PCAP_BASE-../Data}"
+LUA_BASE="${LUA_BASE-./wireshark-lua}"
+INPUT="$1"
+OUTPUT_DIR="$2"
+SELF=$(basename $0)
+
+function usage {
+  cat <<EOF
+Usage: $SELF <pcap-to-lua.txt path> <output dir>
+
+Generate JSON dissector data from a pcap-to-lua.txt file, test runner and
+fixture generator helper script. The results are saved in output dir with the
+same directory structure taken from pcap-to-lua.txt.
+
+Asserts every pcap file has a corresponding lua file.
+
+Asserts pcap entries are unique. Uses `set -o noclobber` so overwriting fails.
+
+A typical test run looks like:
+
+   # generate new data
+   ./gen-data pcap-to-lua.txt latest
+
+   # compare against fixtures
+   find fixtures -name \*.json | while read expected; do
+     actual="latest/$(echo $expected | sed 's/fixtures/latest/')"
+     ./compare "$expected" "$actual"
+   done
+
+EOF
+}
+
+if [ -z "$1" ] || [ -z "$2" ]; then
+  usage
+  exit 1
+fi
+
+# Exclude everything else except this subdir
+#FILTER=Nasdaq/Ise.OrderComboFeed.v1.1
+
+mkdir -p "$OUTPUT_DIR"
+
+cat "$INPUT" | while read line; do
+  pcap="$(echo $line | sed 's/:.*//')"
+  lua="$(echo $line | sed 's/.*://')"
+  key="$(./get-key "$LUA_BASE/$lua")"
+  dir=$(dirname "$pcap")
+  file=$(basename "$pcap" | sed 's/\.pcap/\.json/')
+  mkdir -p "$OUTPUT_DIR/$dir"
+  ./parse "$PCAP_BASE/$pcap" "$LUA_BASE/$lua" "$key" > \
+    "$OUTPUT_DIR/$dir/$file";
+done
+#find "$PCAP_BASE" -name \*.pcap | while read pcap; do \
+#  echo "$pcap" | grep "$FILTER_DIR" > /dev/null || continue; \
+#  dest=$(echo $pcap | sed -e "s/$PCAP_BASE/\./" -e "s/.pcap/.json/") \
+#  lua=$(grep $(echo $dest | sed 's/.json/.pcap/') pcap-to-lua.txt | sed 's/.*://') \
+#  key=$(./get-key "$lua") \
+#  set -o noclobber \
+#    ./parse "$pcap" "$lua" "$key" > "$OUTPUT_DIR/$dest"; \
+#done

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Compare JSON objects. Since everything is currently an object (there are no
+# arrays) we don't need to worry about ordering, the compare is simple.  If you
+# change any key or value in $2 the test will fail.
+#
+# jq docs: https://stedolan.github.io/jq/
+#
+
+jq \
+  --argfile a "$1" \
+  --argfile e "$2" \
+  -n -e '$e == $a'
+
+# https://stackoverflow.com/questions/31930041/using-jq-or-alternative-command-line-tools-to-diff-json-files
+#jq \
+#  --argfile a "$1" \
+#  --argfile b "$2" \
+#  -n '($a | (.. | arrays) |= sort) as $a | ($b | (.. | arrays) |= sort) as $b | $a == $b'

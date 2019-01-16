@@ -1,0 +1,40 @@
+{
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.session": "000008367I",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.sequence": "344498",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.count": "1"
+  },
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.length": "57",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.messagetype": "J"
+    },
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategyauctionmessage": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategyauctionmessage_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.timestamp": "56898329099705",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.strategyid": "2065520",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.auctionid": "1147020",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ordertype": "L",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.side": "B",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.price": "6500",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.size": "1",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.execflag": "N",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ordercapacity": "C",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.scope": "L",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ownerid": "      ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.giveup": "      ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.cmta": "      ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.auctionevent": "U",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.auctiontype": "E",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.numberofresponses": "1",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.auctionresponse": "",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.auctionresponse_tree": {
+        "nasdaq.ise.ordercombofeed.itch.v1.1.responseprice": "5200",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.responsesize": "4"
+      }
+    }
+  }
+}

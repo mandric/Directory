@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -o errexit
+
+SELF=$(basename $0)
+
+function usage {
+  cat <<EOF
+Usage: $SELF <pcap file> <lua file>
+
+Parse pcap file with tshark and lua dissector and print JSON. Also splices JSON
+output to include only dissected part of the data using the dissector protocol
+name, e.g. nasdaq.ise.topcomboquotefeed.itch.v1.0.
+
+EOF
+}
+
+if [ -z "$1" ] || [ -z "$2" ]; then
+  usage
+  exit 1
+fi
+
+set -o nounset
+set -o pipefail
+
+PCAP="$1"
+LUA="$2"
+KEY=$(./get-key "$LUA")
+
+tshark \
+  -r "$PCAP" \
+  -X "lua_script:$LUA" \
+  -T json \
+  | jq ".[0]._source.layers.\"$KEY.lua\""
+

@@ -1,0 +1,31 @@
+{
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.session": "000008367I",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.sequence": "330074",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.count": "1"
+  },
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.length": "42",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.messagetype": "L"
+    },
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategyorderonbookmessage": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategyorderonbookmessage_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.timestamp": "55915530983885",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.strategyid": "2051120",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ordertype": "L",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.side": "A",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.price": "4294967096",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.size": "165",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.execflag": "N",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ordercapacity": "C",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.scope": "L",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.ownerid": "      ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.giveup": "      ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.cmta": "      "
+    }
+  }
+}

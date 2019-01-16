@@ -1,0 +1,22 @@
+{
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.session": "000008367I",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.sequence": "329712",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.count": "1"
+  },
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.length": "12",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.messagetype": "O"
+    },
+    "nasdaq.ise.ordercombofeed.itch.v1.1.strategyopenclosedmessage": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.strategyopenclosedmessage_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.timestamp": "55891009229306",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.strategyid": "2111784",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.openstate": "Y"
+    }
+  }
+}

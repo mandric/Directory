@@ -1,0 +1,6 @@
+Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyAuctionMessage.J.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua
+Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyDirectoryMessage.R.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua
+Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyOrderOnBookMessage.L.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua
+Nasdaq/Ise.OrderComboFeed.v1.1/Heartbeat.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua
+Nasdaq/Ise.OrderComboFeed.v1.1/StrategyOpenClosedMessage.O.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua
+Nasdaq/Ise.OrderComboFeed.v1.1/StrategyTradingActionMessage.H.pcap:Nasdaq/Nasdaq.Ise.OrderComboFeed.Itch.v1.1.Script.Dissector.lua

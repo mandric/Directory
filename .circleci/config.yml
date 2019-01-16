@@ -1,0 +1,21 @@
+version: 2
+
+jobs:
+  pcap_tests:
+    working_directory: ~/repo/.circleci
+    docker:
+      - image: circleci/buildpack-deps:cosmic
+        #https://circleci.com/docs/2.0/circleci-images/#buildpack-deps
+    steps:
+      - checkout:
+          path: ~/repo
+      - run: sudo apt-get -y install tshark
+      - run: make
+      - store_artifacts:
+          path: actual
+
+workflows:
+  version: 2
+  tests:
+    jobs:
+      - pcap_tests

@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+
+SELF=$(basename "$0")
+
+function usage {
+  cat <<EOF
+Usage: $SELF <lua file>
+
+Generate the key used by the Lua dissector code when parsing a pcap file.
+
+Based on the variable name assigned to the Proto function call, e.g.:
+
+  -- Nasdaq Ise TopComboQuoteFeed Itch 1.0 Protocol
+  local nasdaq_ise_topcomboquotefeed_itch_v1_0 = Proto("Nasdaq.Ise.TopCombo...
+
+Examples:
+
+  $ get-key Nasdaq.Ise.TopComboQuoteFeed.Itch.v1.0.Script.Dissector.lua
+  nasdaq.ise.topcomboquotefeed.itch.v1.0
+
+EOF
+}
+
+if [ -z "$1" ]; then
+  usage
+  exit 1
+fi
+
+LUA="$1"
+
+grep Proto\( "$LUA" | cut -f 2 -d ' ' | sed 's/_/./g'

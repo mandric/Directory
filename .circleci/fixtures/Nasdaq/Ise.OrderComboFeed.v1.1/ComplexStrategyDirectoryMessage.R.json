@@ -1,0 +1,38 @@
+{
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.packetheader_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.session": "000008367I",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.sequence": "333879",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.count": "1"
+  },
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message": "",
+  "nasdaq.ise.ordercombofeed.itch.v1.1.message_tree": {
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.messageheader_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.length": "83",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.messagetype": "R"
+    },
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategydirectorymessage": "",
+    "nasdaq.ise.ordercombofeed.itch.v1.1.complexstrategydirectorymessage_tree": {
+      "nasdaq.ise.ordercombofeed.itch.v1.1.timestamp": "56210445396889",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.strategyid": "2112716",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.strategytype": "A",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.source": "1",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.underlyingsymbol": "BABA         ",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.numberoflegs": "2",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.leginformation": "",
+      "nasdaq.ise.ordercombofeed.itch.v1.1.leginformation_tree": {
+        "nasdaq.ise.ordercombofeed.itch.v1.1.optionid": "81435",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.securitysymbol": "BABA  ",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.legid": "1",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.expirationyear": "19",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.expirationmonth": "1",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.expirationday": "11",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.explicitstrikeprice": "15000000000",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.optiontype": "C",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.side": "S",
+        "nasdaq.ise.ordercombofeed.itch.v1.1.legratio": "2"
+      }
+    }
+  }
+}
