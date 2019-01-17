@@ -1,0 +1,30 @@
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyAuctionMessage.J" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyAuctionMessage.J.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyAuctionMessage.J.json"
+}
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyOrderOnBookMessage.L" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyOrderOnBookMessage.L.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyOrderOnBookMessage.L.json"
+}
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyDirectoryMessage.R" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyDirectoryMessage.R.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/ComplexStrategyDirectoryMessage.R.json"
+}
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/Heartbeat" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/Heartbeat.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/Heartbeat.json"
+}
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/StrategyOpenClosedMessage.O" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/StrategyOpenClosedMessage.O.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/StrategyOpenClosedMessage.O.json"
+}
+@test "Nasdaq/Ise.OrderComboFeed.v1.1/StrategyTradingActionMessage.H" {
+  ./json-compare \
+    "fixtures/Nasdaq/Ise.OrderComboFeed.v1.1/StrategyTradingActionMessage.H.json" \
+    "actual/Nasdaq/Ise.OrderComboFeed.v1.1/StrategyTradingActionMessage.H.json"
+}

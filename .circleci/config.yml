@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout:
           path: ~/repo
-      - run: sudo apt-get -y install tshark
+      - run: sudo apt-get -y install tshark bats
       - run: make
       - store_artifacts:
           path: actual

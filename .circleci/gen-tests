@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -o nounset
+set -o pipefail
+set -o errexit
+
+DIR="$1"
+
+find "$DIR" -name \*.json | while read line; do
+  export name="$(echo $line | sed -e 's/fixtures\///' -e 's/.json//')"
+  export expected="$line"
+  export actual="$(echo $line | sed 's/fixtures/actual/')"
+  envsubst < test.tmpl
+done
+
+#cat <<EOF
+#@test "${name}" {
+#  ./json-compare \\
+#    "${expected}" \\
+#    "${actual}"
+#}
+#EOF
