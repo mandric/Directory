@@ -10,7 +10,15 @@
 jq \
   --argfile a "$1" \
   --argfile e "$2" \
-  -n -e '$e == $a'
+  -n -e '$e == $a' > /dev/null
+
+RET="$?"
+
+if [ "$RET" -ne 0 ]; then
+  diff -c "$1" "$2"
+fi
+
+exit "$RET"
 
 # https://stackoverflow.com/questions/31930041/using-jq-or-alternative-command-line-tools-to-diff-json-files
 #jq \
